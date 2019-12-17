@@ -1,4 +1,8 @@
 import os
+try:
+  os.remove("requirements.txt")
+except:
+  pass
 os.remove("runtime.txt")
 os.remove("Procfile")
 os.system("git init")
