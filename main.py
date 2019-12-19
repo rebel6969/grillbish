@@ -3,8 +3,14 @@ try:
   os.remove("requirements.txt")
 except:
   pass
-os.remove("runtime.txt")
-os.remove("Procfile")
+try:
+  os.remove("runtime.txt")
+except:
+  pass
+try:
+  os.remove("Procfile")
+except:
+  pass
 os.system("git init")
 os.system("git remote add origin https://github.com/erenmetesar/NiceGrill.git")
 os.system("git config branch.master.remote origin && git config branch.master.merge refs/heads/master")
