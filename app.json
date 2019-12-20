@@ -3,7 +3,7 @@
   "description": "Simple UserBot made by github.com/erenmetesar",
   "repository": "https://github.com/erenmetesar/NiceGrill",
   "website": "https://telegram.dog/emilygang",
-  "success_url": "", # TODO
+  "success_url": "",
   "env": {
     "API_ID": {
       "description": "Get this value from my.telegram.org.",
@@ -17,7 +17,7 @@
       "description": "Ur String Session",
       "value": ""
     }
-  }],
+  },
   "buildpacks": [{
     "url": "heroku/python"
   }]
