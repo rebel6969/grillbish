@@ -1,0 +1,24 @@
+{
+  "name": "NiceGrill",
+  "description": "Simple UserBot made by github.com/erenmetesar",
+  "repository": "https://github.com/erenmetesar/NiceGrill",
+  "website": "https://telegram.dog/emilygang",
+  "success_url": "", # TODO
+  "env": {
+    "API_ID": {
+      "description": "Get this value from my.telegram.org.",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org.",
+      "value": ""
+    },
+    "SESSION": {
+      "description": "Ur String Session",
+      "value": ""
+    }
+  }],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }]
+}
