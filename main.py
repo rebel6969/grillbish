@@ -11,6 +11,10 @@ try:
   os.remove("Procfile")
 except:
   pass
+try:
+  os.remove("README.md")
+except:
+  pass
 os.system("git init")
 os.system("git remote add origin https://github.com/erenmetesar/NiceGrill.git")
 os.system("git config branch.master.remote origin && git config branch.master.merge refs/heads/master")
