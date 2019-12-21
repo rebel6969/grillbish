@@ -16,6 +16,10 @@
     "SESSION": {
       "description": "Ur String Session",
       "value": ""
+    },
+    "MONGO_URI": {
+      "description": "A MONGODB URL",
+      "value": ""
     }
   },
   "buildpacks": [{
