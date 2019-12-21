@@ -21,7 +21,7 @@ os.system("git config branch.master.remote origin && git config branch.master.me
 os.system("git pull")
 subprocess.call("pip install -r https://raw.githubusercontent.com/erenmetesar/NiceGrill/master/requirements.txt".split(" "), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 config = open("config.py", "w+")
-config.write("API_ID = " + os.environ.get("API_ID", "1234") + "\nAPI_HASH = " + repr(os.environ.get("API_HASH", "'1234'")) + "\nSESSION='" + str(os.environ.get("SESSION")) + "'")
+config.write("API_ID = " + os.environ.get("API_ID", "1234") + "\nAPI_HASH = " + repr(os.environ.get("API_HASH", "'1234'")) + "\nSESSION='" + str(os.environ.get("SESSION")) + "'\nMONGO_URI='" + os.environ.get("MONGO_URI") + "'")
 config.close()
 file = open("client_secret.json", "w")
 file.write(os.environ.get("client_secret", ""))
