@@ -25,4 +25,5 @@ cython
 google_auth_oauthlib
 numpy
 pandas
+pygdrive3fixed
 youtube_dl
